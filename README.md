@@ -39,4 +39,4 @@ I'm a Graduate in Computer science and engineering from Mahatma Gandhi Universit
 
 <h2>📫 How to reach me:</h2>
 
-<a href="href="mailto:sahads9745@gmail.com">![WriteTo@sahadsha](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a> <a href="https://www.linkedin.com/in/linkedin.com/in/sahad-s-4196b213b/">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
+<a href="mailto:sahads9745@gmail.com">![WriteTo@sahadsha](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a> <a href="https://www.linkedin.com/in/linkedin.com/in/sahad-s-4196b213b/">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
