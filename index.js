@@ -17,3 +17,10 @@ function toggleMenu() {
     menu.classList.toggle('active');
     header.classList.toggle('active');
 }
+function theFunction () {
+    // return true or false, depending on whether you want to allow the `href` property to follow through or not
+    let menu=document.getElementById('menu_button');
+    let header=document.getElementById('header');
+    menu.classList.toggle('active');
+    header.classList.toggle('active');
+}
