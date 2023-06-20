@@ -1,11 +1,8 @@
-<!-- ![Lakshmanan Meiyappan Banner Image](./banner.png) -->
-<!-- <h2 align='center'>Lakshmanan Meiyappan @ Laxmena</h2>
-<p align='center'><b>Graduate Student at University of Illinois at Chicago</b></p> -->
-
 <h2>Hey! 👋</h2>
 
 I'm Sahad S! 
-- <i>Currently:</i> Software Engineer at Feathersoft,kochi. 
+- <i>Currently:</i> Software Engineer at Inapp,Trivandrum. 
+- <i>Previously:</i> Associate Software Engineer at Feathersoft,kochi. 
 - <i>Previously:</i> Associate Software Engineer at Kefi tech solutions,Trivandrum.
 
 
