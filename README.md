@@ -2,7 +2,7 @@
 
 I'm Sahad S! 
 - <i>Currently:</i> Software Engineer at Inapp,Trivandrum. 
-- <i>Previously:</i> Associate Software Engineer at Feathersoft,kochi. 
+- <i>Previously:</i> Software Engineer at Feathersoft,kochi. 
 - <i>Previously:</i> Associate Software Engineer at Kefi tech solutions,Trivandrum.
 
 
