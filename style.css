@@ -189,7 +189,6 @@ body header {
   pointer-events: auto !important;
   -webkit-user-select: auto !important;
      -moz-user-select: auto !important;
-      -ms-user-select: auto !important;
           user-select: auto !important;
 }
 body header .logo {
@@ -228,7 +227,7 @@ body header .menu_button .fQyUCd .drkHjj {
   height: 24px;
 }
 body header .menu_button .fQyUCd .drkHjj .jVnkrt {
-  background-color: #64ffda;
+  background-color: rgb(100, 255, 218);
   position: absolute;
   width: 30px;
   height: 2px;
@@ -242,7 +241,7 @@ body header .menu_button .fQyUCd .drkHjj .jVnkrt {
 body header .menu_button .fQyUCd .drkHjj .jVnkrt::before, body header .menu_button .fQyUCd .drkHjj .jVnkrt::after {
   content: "";
   display: block;
-  background-color: #64ffda;
+  background-color: rgb(100, 255, 218);
   position: absolute;
   left: auto;
   right: 0px;
@@ -358,8 +357,7 @@ body main .rightline .email a {
   font-size: var(--fz-xxs);
   line-height: var(--fz-lg);
   letter-spacing: 0.1em;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 body main .rightline .email::after {
   content: "";
@@ -411,7 +409,7 @@ body main #content .main .first h3 {
 }
 body main #content .main .first p {
   margin: 20px 0px 0px;
-  max-width: 500px;
+  max-width: 800px;
 }
 body main #content .main .first .email-link {
   color: var(--green);
@@ -596,7 +594,6 @@ body main #content .main .work .inner {
 body main #content .main .work .inner .sAHTI {
   position: relative;
   z-index: 3;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 0px;
@@ -669,13 +666,13 @@ body main #content .main .exp h2 {
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
-body main #content .main .exp .dnNJYD {
+body main #content .main .exp .list-without-style {
   list-style: none;
   padding: 0px;
   margin: 0px;
   visibility: visible;
 }
-body main #content .main .exp .dnNJYD .huabVa {
+body main #content .main .exp .list-without-style .project-item {
   position: relative;
   display: grid;
   gap: 10px;
@@ -685,23 +682,23 @@ body main #content .main .exp .dnNJYD .huabVa {
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-content {
+body main #content .main .exp .list-without-style .project-item .project-content {
   position: relative;
   grid-area: 1/1/-1/7;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-overline {
+body main #content .main .exp .list-without-style .project-item .project-overline {
   margin: 10px 0px;
   color: var(--green);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   font-weight: 400;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-title {
+body main #content .main .exp .list-without-style .project-item .project-title {
   color: var(--lightest-slate);
   font-size: clamp(24px, 5vw, 28px);
   margin: 0px 0px 20px;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-description {
+body main #content .main .exp .list-without-style .project-item .project-description {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: var(--transition);
   position: relative;
@@ -712,7 +709,7 @@ body main #content .main .exp .dnNJYD .huabVa .project-description {
   color: var(--light-slate);
   font-size: var(--fz-lg);
 }
-body main #content .main .exp .dnNJYD .huabVa .project-tech-list {
+body main #content .main .exp .list-without-style .project-item .project-tech-list {
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -721,14 +718,14 @@ body main #content .main .exp .dnNJYD .huabVa .project-tech-list {
   padding: 0px;
   list-style: none;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-tech-list li {
+body main #content .main .exp .list-without-style .project-item .project-tech-list li {
   margin: 0px 20px 5px 0px;
   color: var(--light-slate);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   white-space: nowrap;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-links {
+body main #content .main .exp .list-without-style .project-item .project-links {
   display: flex;
   align-items: center;
   position: relative;
@@ -736,31 +733,31 @@ body main #content .main .exp .dnNJYD .huabVa .project-links {
   margin-left: -10px;
   color: var(--lightest-slate);
 }
-body main #content .main .exp .dnNJYD .huabVa .project-links a {
+body main #content .main .exp .list-without-style .project-item .project-links a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-links a svg {
+body main #content .main .exp .list-without-style .project-item .project-links a svg {
   width: 20px;
   height: 20px;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-image {
+body main #content .main .exp .list-without-style .project-item .project-image {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: var(--transition);
   grid-area: 1/6/-1/-1;
   position: relative;
   z-index: 1;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-image a {
+body main #content .main .exp .list-without-style .project-item .project-image a {
   width: 100%;
   height: 100%;
   background-color: var(--green);
   border-radius: var(--border-radius);
   vertical-align: middle;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-image a::before {
+body main #content .main .exp .list-without-style .project-item .project-image a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -771,18 +768,18 @@ body main #content .main .exp .dnNJYD .huabVa .project-image a::before {
   background-color: var(--navy);
   mix-blend-mode: screen;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-image a:hover {
+body main #content .main .exp .list-without-style .project-item .project-image a:hover {
   background-color: none;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-image a:hover .img {
+body main #content .main .exp .list-without-style .project-item .project-image a:hover .img {
   filter: none !important;
 }
-body main #content .main .exp .dnNJYD .huabVa .project-image .img {
+body main #content .main .exp .list-without-style .project-item .project-image .img {
   border-radius: var(--border-radius);
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1) brightness(90%);
 }
-body main #content .main .exp .dnNJYD .huabVa .project-image .gatsby-image-wrapper img {
+body main #content .main .exp .list-without-style .project-item .project-image .gatsby-image-wrapper img {
   bottom: 0;
   height: 100%;
   left: 0;
@@ -796,35 +793,35 @@ body main #content .main .exp .dnNJYD .huabVa .project-image .gatsby-image-wrapp
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main #content .main .exp .dnNJYD .huabVa:nth-of-type(2n + 1) .project-content {
+body main #content .main .exp .list-without-style .project-item:nth-of-type(2n + 1) .project-content {
   grid-column: 7/-1;
   text-align: right;
 }
-body main #content .main .exp .dnNJYD .huabVa:nth-of-type(2n + 1) .project-tech-list {
+body main #content .main .exp .list-without-style .project-item:nth-of-type(2n + 1) .project-tech-list {
   justify-content: flex-end;
 }
-body main #content .main .exp .dnNJYD .huabVa:nth-of-type(2n + 1) .project-tech-list li {
+body main #content .main .exp .list-without-style .project-item:nth-of-type(2n + 1) .project-tech-list li {
   margin: 0px 0px 5px 20px;
 }
-body main #content .main .exp .dnNJYD .huabVa:nth-of-type(2n + 1) .project-links {
+body main #content .main .exp .list-without-style .project-item:nth-of-type(2n + 1) .project-links {
   justify-content: flex-end;
   margin-left: 0px;
   margin-right: -10px;
 }
-body main #content .main .exp .dnNJYD .huabVa:nth-of-type(2n + 1) .project-image {
+body main #content .main .exp .list-without-style .project-item:nth-of-type(2n + 1) .project-image {
   grid-column: 1/8;
 }
-body main #content .main .exp .dnNJYD .huabVa:not(:last-of-type) {
+body main #content .main .exp .list-without-style .project-item:not(:last-of-type) {
   margin-bottom: 100px;
 }
 body main #content .main .contact,
-body main #content .main .eXnPVF {
+body main #content .main .contact {
   max-width: 600px;
   margin: 0px auto 100px;
   text-align: center;
 }
 body main #content .main .contact .overline,
-body main #content .main .eXnPVF .overline {
+body main #content .main .contact .overline {
   display: block;
   margin-bottom: 20px;
   color: var(--green);
@@ -833,20 +830,20 @@ body main #content .main .eXnPVF .overline {
   font-weight: 400;
 }
 body main #content .main .contact .overline::before,
-body main #content .main .eXnPVF .overline::before {
+body main #content .main .contact .overline::before {
   bottom: 0px;
   font-size: var(--fz-sm);
 }
 body main #content .main .contact .numbered-heading::after,
-body main #content .main .eXnPVF .numbered-heading::after {
+body main #content .main .contact .numbered-heading::after {
   display: none;
 }
 body main #content .main .contact .title,
-body main #content .main .eXnPVF .title {
+body main #content .main .contact .title {
   font-size: clamp(40px, 5vw, 60px);
 }
 body main #content .main .contact .email-link,
-body main #content .main .eXnPVF .email-link {
+body main #content .main .contact .email-link {
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
@@ -860,7 +857,7 @@ body main #content .main .eXnPVF .email-link {
   transition: var(--transition);
   margin-top: 50px;
 }
-body main .earxGk {
+body main .footer-socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -870,10 +867,10 @@ body main .earxGk {
   padding: 15px;
   text-align: center;
 }
-body main .earxGk .iKeBGp {
+body main .footer-socials .bottom-socials {
   display: none;
 }
-body main .earxGk .iKeBGp ul {
+body main .footer-socials .bottom-socials ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -881,31 +878,31 @@ body main .earxGk .iKeBGp ul {
   margin: 0px;
   list-style: none;
 }
-body main .earxGk .iKeBGp ul a {
+body main .footer-socials .bottom-socials ul a {
   padding: 10px;
 }
-body main .earxGk .iKeBGp ul a svg {
+body main .footer-socials .bottom-socials ul a svg {
   width: 20px;
   height: 20px;
 }
-body main .earxGk .fLSMpu {
+body main .footer-socials .footer {
   color: var(--light-slate);
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
   line-height: 1;
 }
-body main .earxGk .fLSMpu a {
+body main .footer-socials .footer a {
   padding: 10px;
 }
-body main .earxGk .fLSMpu .github-stats {
+body main .footer-socials .footer .github-stats {
   margin-top: 10px;
 }
-body main .earxGk .fLSMpu .github-stats > span {
+body main .footer-socials .footer .github-stats > span {
   display: inline-flex;
   align-items: center;
   margin: 0px 7px;
 }
-body main .earxGk .fLSMpu .github-stats svg {
+body main .footer-socials .footer .github-stats svg {
   display: inline-block;
   margin-right: 5px;
   width: 14px;
@@ -917,7 +914,7 @@ body main .resume-button:active {
   outline: none;
 }
 
-.secTR {
+.sectionVisible {
   visibility: visible;
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -932,18 +929,17 @@ body main .resume-button:active {
     margin: 50px auto 0px !important;
     width: 70% !important;
   }
-
-  .huabVa {
+  .project-item {
     box-shadow: 0 10px 30px -15px var(--navy-shadow) !important;
     transition: var(--transition) !important;
   }
-  .huabVa .project-title {
+  .project-item .project-title {
     color: var(--white) !important;
   }
-  .huabVa .project-title a {
+  .project-item .project-title a {
     position: static;
   }
-  .huabVa .project-title a::before {
+  .project-item .project-title a::before {
     content: "";
     display: block;
     position: absolute;
@@ -953,15 +949,15 @@ body main .resume-button:active {
     top: 0px;
     left: 0px;
   }
-  .huabVa .project-description {
+  .project-item .project-description {
     padding: 20px 0px !important;
     background-color: transparent !important;
     box-shadow: none !important;
   }
-  .huabVa .project-tech-list {
+  .project-item .project-tech-list {
     margin: 10px 0px !important;
   }
-  .huabVa .project-content {
+  .project-item .project-content {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -970,61 +966,60 @@ body main .resume-button:active {
     padding: 40px 40px 30px !important;
     z-index: 5 !important;
   }
-  .huabVa .project-image {
+  .project-item .project-image {
     grid-column: 1/-1 !important;
     height: 100% !important;
     opacity: 0.25 !important;
   }
-  .huabVa .project-image .img {
+  .project-item .project-image .img {
     -o-object-fit: cover !important;
        object-fit: cover !important;
     width: auto !important;
     height: 100% !important;
     filter: grayscale(100%) contrast(1) brightness(80%) !important;
   }
-  .huabVa:nth-of-type(2n + 1) .project-tech-list {
+  .project-item:nth-of-type(2n + 1) .project-tech-list {
     justify-content: flex-start !important;
   }
-  .huabVa:nth-of-type(2n + 1) .project-links {
+  .project-item:nth-of-type(2n + 1) .project-links {
     justify-content: flex-start !important;
     margin-left: -10px !important;
     margin-right: 0px !important;
   }
-  .huabVa:nth-of-type(2n + 1) .project-content {
+  .project-item:nth-of-type(2n + 1) .project-content {
     grid-column: 1/-1 !important;
     padding: 40px 40px 30px !important;
     text-align: left !important;
   }
-  .huabVa:nth-of-type(2n + 1) .project-image {
+  .project-item:nth-of-type(2n + 1) .project-image {
     grid-column: 1/-1 !important;
     height: 100% !important;
     opacity: 0.25 !important;
   }
-  .huabVa:not(:last-of-type) {
+  .project-item:not(:last-of-type) {
     margin-bottom: 70px !important;
   }
-
   .leftline,
-.rightline {
+  .rightline {
     display: none !important;
   }
-
   .main {
     padding: 0px 50px !important;
+  }
+  .bottom-socials {
+    display: block !important;
   }
 }
 @media (min-width: 769) and (max-width: 1080px) {
   .leftline,
-.rightline {
+  .rightline {
     left: 20px !important;
     right: auto !important;
   }
-
-  .huabVa:nth-of-type(2n + 1) .project-content {
+  .project-item:nth-of-type(2n + 1) .project-content {
     grid-column: 5/-1 !important;
   }
-
-  .huabVa .project-content {
+  .project-item .project-content {
     grid-column: 1/9 !important;
   }
 }
@@ -1035,22 +1030,18 @@ body main .resume-button:active {
     overflow-x: scroll !important;
     width: 100% !important;
   }
-
   .sAHTI button {
     border-left: 0px !important;
     border-bottom: 2px solid !important;
   }
-
   .sAHTI::-webkit-scrollbar {
     width: 10px !important;
   }
-
   .sAHTI::-webkit-scrollbar-thumb {
     background-color: var(--dark-slate) !important;
     border: 3px solid var(--navy) !important;
     border-radius: 10px !important;
   }
-
   .sAHTI::-webkit-scrollbar-track {
     background: var(--navy) !important;
   }
@@ -1092,7 +1083,7 @@ body main .resume-button:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #172a45;
+    background-color: rgb(23, 42, 69);
     padding: 50px;
     right: 0px;
     margin-left: auto;
@@ -1111,7 +1102,7 @@ body main .resume-button:active {
   body header .header.active .resume {
     padding-top: 30px;
   }
-  body .huabVa:not(:last-of-type) {
+  body .project-item:not(:last-of-type) {
     margin-bottom: 30px !important;
   }
   body section {

@@ -413,7 +413,7 @@ body {
           }
           p {
             margin: 20px 0px 0px;
-            max-width: 500px;
+            max-width: 800px;
           }
           .email-link {
             color: var(--green);
@@ -683,13 +683,13 @@ body {
             transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s,
               transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
           }
-          .dnNJYD {
+          .list-without-style {
             list-style: none;
             padding: 0px;
             margin: 0px;
             visibility: visible;
 
-            .huabVa {
+            .project-item {
               position: relative;
               display: grid;
               gap: 10px;
@@ -862,7 +862,7 @@ body {
           }
         }
         .contact,
-        .eXnPVF {
+        .contact {
           max-width: 600px;
           margin: 0px auto 100px;
           text-align: center;
@@ -901,7 +901,7 @@ body {
         }
       }
     }
-    .earxGk {
+    .footer-socials {
       display: flex;
       -webkit-box-pack: center;
       justify-content: center;
@@ -912,7 +912,7 @@ body {
       min-height: 70px;
       padding: 15px;
       text-align: center;
-      .iKeBGp {
+      .bottom-socials {
         display: none;
         ul {
           display: flex;
@@ -932,7 +932,7 @@ body {
           }
         }
       }
-      .fLSMpu {
+      .footer {
         color: var(--light-slate);
         font-family: var(--font-mono);
         font-size: var(--fz-xxs);
@@ -964,7 +964,7 @@ body {
     }
   }
 }
-.secTR {
+.sectionVisible {
   visibility: visible;
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -980,7 +980,7 @@ body {
     }
   }
 
-  .huabVa {
+  .project-item {
     box-shadow: 0 10px 30px -15px var(--navy-shadow) !important;
     transition: var(--transition) !important;
     .project-title {
@@ -1060,6 +1060,10 @@ body {
   }
   .main {
     padding: 0px 50px !important;
+
+  }
+  .bottom-socials {
+    display: block !important;
   }
 }
 @media (min-width: 769) and (max-width: 1080px) {
@@ -1068,10 +1072,10 @@ body {
     left: 20px !important;
     right: auto !important;
   }
-  .huabVa:nth-of-type(2n + 1) .project-content {
+  .project-item:nth-of-type(2n + 1) .project-content {
     grid-column: 5 / -1 !important;
   }
-  .huabVa .project-content {
+  .project-item .project-content {
     grid-column: 1 / 9 !important;
   }
 }
@@ -1157,7 +1161,7 @@ body {
         }
       }
     }
-    .huabVa:not(:last-of-type) {
+    .project-item:not(:last-of-type) {
       margin-bottom: 30px !important;
     }
     section {
