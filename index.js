@@ -1,4 +1,4 @@
-var buttons= document.querySelectorAll('.deLjYW');
+var buttons= document.querySelectorAll('.inner-item-button');
 var panels= document.querySelectorAll('.panel');
 function companySelect(id) {
     for (var i = 0 ; i < buttons.length; i++) {

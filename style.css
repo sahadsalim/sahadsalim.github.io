@@ -591,7 +591,7 @@ body main #content .main .work .inner {
   min-height: 340px;
   display: flex;
 }
-body main #content .main .work .inner .sAHTI {
+body main #content .main .work .inner .inner-item {
   position: relative;
   z-index: 3;
   width: -moz-max-content;
@@ -600,7 +600,7 @@ body main #content .main .work .inner .sAHTI {
   margin: 0px;
   list-style: none;
 }
-body main #content .main .work .inner .sAHTI .deLjYW {
+body main #content .main .work .inner .inner-item .inner-item-button {
   text-decoration: none;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
@@ -619,7 +619,7 @@ body main #content .main .work .inner .sAHTI .deLjYW {
   text-align: left;
   white-space: nowrap;
 }
-body main #content .main .work .inner .sAHTI .deLjYW.active {
+body main #content .main .work .inner .inner-item .inner-item-button.active {
   color: var(--green);
   border-left: 2px solid;
 }
@@ -628,33 +628,33 @@ body main #content .main .work .inner .jbGgbG {
   width: 100%;
   margin-left: 20px;
 }
-body main #content .main .work .inner .QgHxr {
+body main #content .main .work .inner .panel {
   display: none;
 }
-body main #content .main .work .inner .QgHxr.active {
+body main #content .main .work .inner .panel.active {
   display: block;
 }
-body main #content .main .work .inner .QgHxr h3 .company {
+body main #content .main .work .inner .panel h3 .company {
   color: var(--green);
 }
-body main #content .main .work .inner .QgHxr .range {
+body main #content .main .work .inner .panel .range {
   margin-bottom: 25px;
   color: var(--light-slate);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
 }
-body main #content .main .work .inner .QgHxr ul {
+body main #content .main .work .inner .panel ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
   font-size: var(--fz-lg);
 }
-body main #content .main .work .inner .QgHxr ul li {
+body main #content .main .work .inner .panel ul li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
 }
-body main #content .main .work .inner .QgHxr ul li::before {
+body main #content .main .work .inner .panel ul li::before {
   content: "▹";
   position: absolute;
   left: 0px;
@@ -1025,24 +1025,24 @@ body main .resume-button:active {
 }
 @media only screen and (max-width: 768px) {
   /* default iPad screens */
-  .sAHTI {
+  .inner-item {
     display: flex !important;
     overflow-x: scroll !important;
     width: 100% !important;
   }
-  .sAHTI button {
+  .inner-item button {
     border-left: 0px !important;
     border-bottom: 2px solid !important;
   }
-  .sAHTI::-webkit-scrollbar {
+  .inner-item::-webkit-scrollbar {
     width: 10px !important;
   }
-  .sAHTI::-webkit-scrollbar-thumb {
+  .inner-item::-webkit-scrollbar-thumb {
     background-color: var(--dark-slate) !important;
     border: 3px solid var(--navy) !important;
     border-radius: 10px !important;
   }
-  .sAHTI::-webkit-scrollbar-track {
+  .inner-item::-webkit-scrollbar-track {
     background: var(--navy) !important;
   }
 }

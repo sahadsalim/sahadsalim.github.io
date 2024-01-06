@@ -603,14 +603,14 @@ body {
           .inner {
             min-height: 340px;
             display: flex;
-            .sAHTI {
+            .inner-item {
               position: relative;
               z-index: 3;
               width: max-content;
               padding: 0px;
               margin: 0px;
               list-style: none;
-              .deLjYW {
+              .inner-item-button {
                 text-decoration: none;
                 text-decoration-skip-ink: auto;
                 position: relative;
@@ -639,7 +639,7 @@ body {
               width: 100%;
               margin-left: 20px;
             }
-            .QgHxr {
+            .panel {
               display: none;
               &.active {
                 display: block;
@@ -1081,25 +1081,25 @@ body {
 }
 @media only screen and (max-width: 768px) {
   /* default iPad screens */
-  .sAHTI {
+  .inner-item {
     display: flex !important;
     overflow-x: scroll !important;
     width: 100% !important;
   }
-  .sAHTI button {
+  .inner-item button {
     border-left: 0px !important;
     border-bottom: 2px solid !important;
   }
-  .sAHTI::-webkit-scrollbar {
+  .inner-item::-webkit-scrollbar {
     width: 10px !important;
   }
-  .sAHTI::-webkit-scrollbar-thumb {
+  .inner-item::-webkit-scrollbar-thumb {
     background-color: var(--dark-slate) !important;
     border: 3px solid var(--navy) !important;
     border-radius: 10px !important;
   }
 
-  .sAHTI::-webkit-scrollbar-track {
+  .inner-item::-webkit-scrollbar-track {
     background: var(--navy) !important;
   }
 }
