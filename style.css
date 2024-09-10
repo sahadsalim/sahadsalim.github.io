@@ -1114,4 +1114,7 @@ body main .resume-button:active {
   body .about h1 {
     margin: 0px 0px 20px 2px !important;
   }
+  .sronly {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
