@@ -1,5 +1,9 @@
 var buttons= document.querySelectorAll('.inner-item-button');
 var panels= document.querySelectorAll('.panel');
+const toggleButton = document.getElementById('theme-toggle');
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');
+});
 function companySelect(id) {
     for (var i = 0 ; i < buttons.length; i++) {
         if (id==i && (!buttons[i].classList.contains('active'))) {

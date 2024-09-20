@@ -1,5 +1,6 @@
 @charset "UTF-8";
 :root {
+  /* Dark theme variables */
   --dark-navy: #020c1b;
   --navy: #0a192f;
   --light-navy: #112240;
@@ -12,8 +13,7 @@
   --white: #e6f1ff;
   --green: #64ffda;
   --green-tint: rgba(100, 255, 218, 0.1);
-  --font-sans: "Calibre", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
+  --font-sans: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   --fz-xxs: 12px;
   --fz-xs: 13px;
@@ -33,10 +33,20 @@
   --hamburger-width: 30px;
   --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
   --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-  --ham-after: bottom 0.1s ease-in 0.25s,
-    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  --ham-after-active: bottom 0.1s ease-out,
-    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ham-after-active: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+.light-theme {
+  --background: #fafafa;
+  --text-color: #000000;
+  --header-bg: #f7f7f7;
+  --navy: #c8eef4;
+  --light-navy: #0c8e9f;
+  --slate: #020202;
+  --light-slate: #050505;
+  --white: #fefefe;
+  --lightest-slate:#00c697;
+  --green:#25c9eb;
 }
 
 *,
@@ -49,7 +59,7 @@ a {
   display: inline-block;
   text-decoration: none;
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   color: inherit;
   position: relative;
   transition: var(--transition);
@@ -58,7 +68,7 @@ a .inline-link {
   display: inline-block;
   text-decoration: none;
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   position: relative;
   transition: var(--transition);
   color: var(--green);
@@ -83,21 +93,14 @@ button {
   border-radius: 0px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 10px;
   font-weight: 600;
   color: var(--lightest-slate);
   line-height: 1.1;
 }
 
-img,
-svg,
-.gatsby-image-wrapper {
+img, svg, .gatsby-image-wrapper {
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
@@ -110,7 +113,7 @@ p a {
   display: inline-block;
   text-decoration: none;
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
   position: relative;
   transition: var(--transition);
   color: var(--green);
@@ -160,6 +163,12 @@ body {
   line-height: 1.3;
   counter-reset: section;
 }
+
+body.light-theme {
+  background-color: var(--navy);
+  color: var(--slate);
+}
+
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -171,6 +180,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: var(--navy);
 }
+
 body header {
   display: flex;
   justify-content: space-between;
@@ -183,14 +193,17 @@ body header {
   height: var(--nav-height);
   background-color: rgba(10, 25, 47, 0.85);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transition: var(--transition);
   filter: none !important;
   pointer-events: auto !important;
   -webkit-user-select: auto !important;
-     -moz-user-select: auto !important;
-          user-select: auto !important;
+  -moz-user-select: auto !important;
+  user-select: auto !important;
 }
+
+/* The rest of your styles remain unchanged */
+
 body header .logo {
   justify-self: flex-start;
   background-image: url(assets/logo.svg);
@@ -425,6 +438,11 @@ body main #content .main .first .email-link {
   transition: var(--transition);
   margin-top: 50px;
 }
+body.light-theme #content .main .contact .email-link:hover {
+  background-color: var(--green);
+  color: var(--text-color);
+  font-size: var(--fz-md);
+}
 body main #content .main .about {
   visibility: visible;
   opacity: 1;
@@ -503,13 +521,14 @@ body main #content .main .about .inner .inner-image .wrapper {
   border-radius: var(--border-radius);
   background-color: var(--green);
 }
-body main #content .main .about .inner .inner-image .wrapper .img {
+body:not(.light-theme) main #content .main .about .inner .inner-image .wrapper .img {
   position: relative;
   border-radius: var(--border-radius);
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
   transition: var(--transition);
 }
+
 body main #content .main .about .inner .inner-image .wrapper::before, body main #content .main .about .inner .inner-image .wrapper::after {
   content: "";
   display: block;
@@ -757,7 +776,7 @@ body main #content .main .exp .list-without-style .project-item .project-image a
   border-radius: var(--border-radius);
   vertical-align: middle;
 }
-body main #content .main .exp .list-without-style .project-item .project-image a::before {
+body:not(.light-theme) main #content .main .exp .list-without-style .project-item .project-image a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -774,7 +793,7 @@ body main #content .main .exp .list-without-style .project-item .project-image a
 body main #content .main .exp .list-without-style .project-item .project-image a:hover .img {
   filter: none !important;
 }
-body main #content .main .exp .list-without-style .project-item .project-image .img {
+body:not(.light-theme) main #content .main .exp .list-without-style .project-item .project-image .img {
   border-radius: var(--border-radius);
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1) brightness(90%);
@@ -857,6 +876,7 @@ body main #content .main .contact .email-link {
   transition: var(--transition);
   margin-top: 50px;
 }
+
 body main .footer-socials {
   display: flex;
   justify-content: center;
@@ -1114,7 +1134,90 @@ body main .resume-button:active {
   body .about h1 {
     margin: 0px 0px 20px 2px !important;
   }
-  .sronly {
-    display: none;
-  }
+}
+.sr-only {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
+.light-theme header {
+  background-color: rgba(255, 255, 255, 0.85); /* Light background */
+}
+
+.light-theme header .logo {
+  color: var(--green); /* Logo color remains consistent */
+}
+
+.light-theme header .menu_button .fQyUCd .drkHjj .jVnkrt,
+.light-theme header .menu_button .fQyUCd .drkHjj .jVnkrt::before,
+.light-theme header .menu_button .fQyUCd .drkHjj .jVnkrt::after {
+  background-color: var(--green); /* Adjust menu icon color for light theme */
+}
+
+.light-theme header .header ul li a {
+  color: var(--slate); /* Text color for links */
+}
+
+.light-theme header .header .resume a {
+  color: var(--green);
+  border: 1px solid var(--green);
+  background-color: transparent;
+}
+
+/* Dark theme header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0px 50px;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: rgba(10, 25, 47, 0.85); /* Dark theme background */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+header .logo {
+  justify-self: flex-start;
+  background-image: url(assets/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 38px;
+  text-align: center;
+  height: 41px;
+  padding-top: 7px;
+  color: var(--green); /* Dark theme logo color */
+}
+
+header .menu_button .fQyUCd .drkHjj .jVnkrt,
+header .menu_button .fQyUCd .drkHjj .jVnkrt::before,
+header .menu_button .fQyUCd .drkHjj .jVnkrt::after {
+  background-color: var(--green); /* Dark theme menu button color */
+}
+
+/* Light theme header styles */
+.light-theme header {
+  background-color: rgba(255, 255, 255, 0.85); /* Light theme background */
+}
+
+.light-theme header .logo {
+  color: var(--green); /* Keep logo color in light theme */
+}
+
+.light-theme header .menu_button .fQyUCd .drkHjj .jVnkrt,
+.light-theme header .menu_button .fQyUCd .drkHjj .jVnkrt::before,
+.light-theme header .menu_button .fQyUCd .drkHjj .jVnkrt::after {
+  background-color: var(--green); /* Adjust menu icon color */
+}
+
+.light-theme header .header ul li a {
+  color: var(--slate); /* Lighter text color for light theme */
+}
+
+.light-theme header .header .resume a {
+  color: var(--green);
+  border: 1px solid var(--green);
+  background-color: transparent;
+}
