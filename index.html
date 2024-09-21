@@ -23,8 +23,6 @@
       </div>
       <div class="header" id="header">
         <ul>
-          <button id="theme-toggle">Toggle Theme</button>
-
           <li><a href="#about" class="header-link" onclick="return theFunction()">About</a></li>
           <li><a href="#work" class="header-link" onclick="return theFunction()">Work</a></li>
           <li><a href="#exp" class="header-link" onclick="return theFunction()">Experience</a></li>
@@ -46,6 +44,7 @@
               </svg>
               <svg class="theme-icon active" id="lightIcon" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="sun"
                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-sun fa-w-16 fa-7x"
+                onclick="toggleThemeUpdate()"
                 >
                 <g class="fa-group">
                   <path fill="currentColor"

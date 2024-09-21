@@ -1168,7 +1168,7 @@ body:not(.light-theme) #content .main .about .inner .inner-image .wrapper .img {
   width: 25px;
 }
 
-#darkIcon .fa-primary,
+.dark-theme #darkIcon .fa-primary,
 .light-theme #lightIcon .fa-primary,
 .solar #solarIcon .fa-primary {
   fill: #ff7eee !important;
@@ -1185,12 +1185,12 @@ body:not(.light-theme) #content .main .about .inner .inner-image .wrapper .img {
 .solar #solarIcon,
 .theme-val:hover #lightIcon,
 .theme-val:hover #darkIcon {
-  display: block !important;
+  display: none !important;
 }
 
 .light-theme #darkIcon,
 .dark-theme #lightIcon,
-.theme-val:hover .dark-theme #lightIcon,
-.theme-val:hover .light-theme #darkIcon {
-  display: none !important;
+.dark-theme .theme-val:hover #lightIcon,
+.light-theme .theme-val:hover #darkIcon {
+  display: block !important;
 }/*# sourceMappingURL=style.css.map */

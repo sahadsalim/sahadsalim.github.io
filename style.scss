@@ -1395,7 +1395,7 @@ body {
   }
 }
 
-#darkIcon .fa-primary,
+.dark-theme #darkIcon .fa-primary,
 .light-theme #lightIcon .fa-primary,
 .solar #solarIcon .fa-primary {
   fill: #ff7eee !important;
@@ -1413,11 +1413,12 @@ body {
 .solar #solarIcon,
 .theme-val:hover #lightIcon,
 .theme-val:hover #darkIcon {
-  display: block !important;
+  display: none !important;
+
 }
 .light-theme #darkIcon,
 .dark-theme #lightIcon,
-.theme-val:hover .dark-theme #lightIcon,
-.theme-val:hover .light-theme #darkIcon {
-  display: none !important;
+.dark-theme .theme-val:hover  #lightIcon,
+.light-theme .theme-val:hover  #darkIcon {
+  display: block !important;
 }
