@@ -11,6 +11,7 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
+  --green2: #64ffdb31;
   --green-tint: rgba(100, 255, 218, 0.1);
   --font-sans: "Calibre", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
@@ -59,6 +60,7 @@
   --white: #fefefe;
   /* Off-white */
   --green: #05b087;
+  --green2: #05b087;
 }
 
 *,
@@ -768,7 +770,7 @@ body main #content .main .exp .list-without-style .project-item .project-image {
 body main #content .main .exp .list-without-style .project-item .project-image a {
   width: 100%;
   height: 100%;
-  background-color: var(--green);
+  background-color: var(--green2);
   border-radius: var(--border-radius);
   vertical-align: middle;
 }
@@ -1165,32 +1167,24 @@ body:not(.light-theme) #content .main .about .inner .inner-image .wrapper .img {
   cursor: pointer;
 }
 .theme-val .nav-link .theme-icon {
-  width: 25px;
+  height: 20px !important;
+  width: 20px !important;
+  display: none;
 }
 
-.dark-theme #darkIcon .fa-primary,
-.light-theme #lightIcon .fa-primary,
-.solar #solarIcon .fa-primary {
-  fill: #ff7eee !important;
+/* Show correct icon based on theme */
+.dark-theme #lightIcon {
+  display: block !important;
 }
 
-.dark-theme #darkIcon .fa-secondary,
-.light-theme #lightIcon .fa-secondary,
-.solar #solarIcon .fa-secondary {
-  fill: #df49a6 !important;
-}
-
-.dark-theme #darkIcon,
-.light-theme #lightIcon,
-.solar #solarIcon,
-.theme-val:hover #lightIcon,
-.theme-val:hover #darkIcon {
+.dark-theme #darkIcon {
   display: none !important;
 }
 
-.light-theme #darkIcon,
-.dark-theme #lightIcon,
-.dark-theme .theme-val:hover #lightIcon,
-.light-theme .theme-val:hover #darkIcon {
+.light-theme #darkIcon {
   display: block !important;
+}
+
+.light-theme #lightIcon {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */
