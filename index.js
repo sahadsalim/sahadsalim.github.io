@@ -1,10 +1,6 @@
 var buttons= document.querySelectorAll('.inner-item-button');
 var panels= document.querySelectorAll('.panel');
-const toggleButton = document.getElementById('theme-toggle');
-toggleButton.addEventListener('click', () => {
-  document.body.classList.toggle('light-theme');
-  document.body.classList.toggle('dark-theme');
-});
+
 function toggleThemeUpdate(){
     document.body.classList.toggle('light-theme');
     document.body.classList.toggle('dark-theme');

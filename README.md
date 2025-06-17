@@ -1,8 +1,8 @@
 <h2>Hey! 👋</h2>
 
 I'm Sahad S! 
-- <i>Currently:</i> Software Engineer at Inapp,Trivandrum. 
-- <i>Previously:</i> Software Engineer at Feathersoft,kochi. 
+- <i>Currently:</i> Senior Software Engineer at Inapp,Trivandrum. 
+- <i>Previously:</i> Software Engineer at Feathersoft,Kochi. 
 - <i>Previously:</i> Associate Software Engineer at Kefi tech solutions,Trivandrum.
 
 
@@ -36,6 +36,6 @@ I'm a Graduate in Computer science and engineering from Mahatma Gandhi Universit
 
 <h2>📫 How to reach me:</h2>
 
-<a href="mailto:sahads9745@gmail.com">![WriteTo@sahadsha](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a> <a href="https://www.linkedin.com/in/sahad-s-4196b213b/">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
+<a href="mailto:sahads9745@gmail.com">![WriteTo@sahadsha](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a> <a href="https://www.linkedin.com/in/sahad-s/">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 <!-- [<img align="left" alt="sahad | Facebook" height="22px" src="./SocialLogo/Facebook.png" />][https://www.facebook.com/sahad.sha.180]
 [<img align="left" alt="sahad | Instagram" height="22px" src="./SocialLogo/Instagram.png" />][https://www.instagram.com/sahad.sha.137/] -->
