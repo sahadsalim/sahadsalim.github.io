@@ -63,6 +63,42 @@
   --green2: #05b087;
 }
 
+/* Gradient theme: vibrant, modern gradient palette */
+:root {
+  --gradient-1: linear-gradient(135deg, #06b6d4 0%, #7c3aed 50%, #ec4899 100%);
+  --gradient-2: linear-gradient(180deg, rgba(6,182,212,0.08) 0%, rgba(124,58,237,0.06) 40%, rgba(236,72,153,0.04) 100%);
+  --accent-gradient: linear-gradient(90deg, #06b6d4, #7c3aed);
+}
+
+.gradient-theme {
+  /* Base colors adapted for high contrast on top of gradient */
+  --navy: transparent; /* make header/background blend with gradient */
+  --light-navy: rgba(255,255,255,0.02);
+  --navy-shadow: rgba(124,58,237,0.25);
+  --dark-slate: rgba(255,255,255,0.12);
+  --slate: #e6f1ff; /* primary text color */
+  --light-slate: #dbeafe;
+  --lightest-slate: #ffffff;
+  --white: #ffffff;
+  --green: #7dd3fc; /* soft cyan accent */
+  --green2: rgba(125,211,252,0.12);
+}
+
+/* Apply gradient background and tweak header/link styles when enabled */
+body.gradient-theme {
+  background: var(--gradient-1);
+  color: var(--slate);
+}
+body.gradient-theme header {
+  background: transparent;
+}
+body.gradient-theme a:hover, body.gradient-theme a:focus {
+  color: transparent;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 *,
 ::before,
 ::after {
